@@ -1,0 +1,56 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Mar Oct 27 12:18:46 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   pedidos.ctl
+Data File:      pedidos.txt
+  Bad File:     pedidos.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table PEDIDOS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CODIGOPEDIDO                        FIRST     *   ;       CHARACTER            
+    SQL string for column : "pedSEQ.nextval"
+ESTADO                               NEXT     *   ;       CHARACTER            
+FECHA_PEDIDO                         NEXT     *   ;       CHARACTER            
+    SQL string for column : "to_date(:fecha_pedido,'DD-MM-YY:HH24:MI')"
+FECHA_ENTREGA                        NEXT     *   ;       CHARACTER            
+    SQL string for column : "to_date(:fecha_entrega,'DD-MM-YY:HH24:MI')"
+IMPORTET                             NEXT     *   ;       CHARACTER            
+DNI                                  NEXT     *   ;       CHARACTER            
+
+
+Table PEDIDOS:
+  9 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  99072 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             9
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Mar Oct 27 12:18:46 2015
+Run ended on Mar Oct 27 12:18:47 2015
+
+Elapsed time was:     00:00:00.79
+CPU time was:         00:00:00.03
