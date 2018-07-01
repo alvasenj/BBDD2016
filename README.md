@@ -1,2 +1,2 @@
-# BBDD2016
-SQL/PL-SQL
+# Database
+SQL/PL-SQL examples
